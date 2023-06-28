@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&family=Roboto:wght@400;700&display=swap');
+:root{
+    --fonte-padrao:'Roboto', sans-serif;
+    --cor-primary: hsl(4, 100%, 67%);
+    --cor-secundary:hsl(234, 29%, 20%);
+    --cor-tertiary:hsl(235, 18%, 26%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+/*Estilizando getal*/
+.conteiner{
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-family: var(--fonte-padrao);
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+h4{
+    width: 100%;
+    font-family: var(--fonte-padrao);
+    font-size: 26px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.principal{
+    width: 90%;
+    margin: 0% 2% 0% 10%;
+}
+/*Estilizando as listas*/
+.listas{
+    display: flex;
+    text-align: justify;
+    margin-top: 10px;
+}
+.icon_listas{
+    padding-right: 15px;
+}
+.texto_Listas{
+    font-size: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    width: 550px;
+}
+/*Estilizando o formulário*/
+.forms_email{
+    margin-top: 20px;
+    color: var(--cor-secundary);
+    font-size: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    width: 550px;
+}
+input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(46, 45, 45);
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 25px;
+
+}
+.label_email{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--fonte-padrao);
+}
+input::placeholder{
+    color: rgb(68, 62, 62);
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+}
+/*Estilizando a imagem*/
+.img_conteiner{
+    width: 100%;
+    padding-top: 20px;
+}
+/*Estilizando o botão*/
+button{
+    width: 550px;
+    height: 45px;
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: var(--cor-primary);
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--cor-secundary);
+    transform: translate(-3px);
+    transition-duration: 0.5ms;
+    box-shadow: 0px 7px 10px black;
+}
+
+/*media quary com width max de 375 mobile*/
+@media only screen and (max-width: 375px) {
+    .conteiner{
+        flex-direction: column-reverse;
+    }
+    .img_conteiner{
+        padding: 0;
+        justify-content: center;
+
+        
+    }
+    img{
+        width: 1440px;
+        height: 537px;
+    }
